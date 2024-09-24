@@ -1,29 +1,4 @@
- <?php 
 
-    if(isset($_POST['submit']))
-    {
-        print_r('Nome: ' . $_POST['name']);
-        print_r('<br>');
-        print_r('Email: ' . $_POST['email']);
-        print_r('<br>');
-        print_r('Sexo: ' . $_POST['genero']);
-        print_r('<br>');
-        print_r('Senha: ' . $_POST['senha']);
-        print_r('<br>');
-        print_r('confirmar_senha: ' . $_POST['confirmar_senha']);
-    
-        include_once('config.php');
-
-        $nome = $_POST['name'];
-        $email = $_POST['email'];
-        $sexo = $_POST['genero'];
-        $senha = $_POST['senha'];
-        $confirmar_senha = $_POST['confirmar_senha'];
-
-        $result = mysqli_query($conexao, "INSERT INTO usuario(nome,email,sexo,senha,confirmar_senha) 
-        VALUES ('$nome','$email','$sexo','$senha','$confirmar_senha')");
-    }
-?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
