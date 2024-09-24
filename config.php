@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
 
     $dbHost = '127.0.0.1';
     $dbUsername = 'root';
@@ -14,4 +14,4 @@
         echo "Conecção efetuada com sucesso";
     }
 
-?> -->
+?> 
